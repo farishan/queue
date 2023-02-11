@@ -9,40 +9,42 @@
  * @returns Queue
  */
 function Queue() {
-    const items = []
+    "use strict";
+
+    var items = [];
 
     /**
      * Add item to the queue's tail
      *
-     * @method
+     * @kind method
      * @param {any} item The item to be added
      * @returns {Queue} The queue
      */
     this.enqueue = function (item) {
-        items.push(item)
-    }
+        items.push(item);
+    };
 
     /**
      * Remove item from the queue's head
      *
-     * @method
+     * @kind method
      * @returns {Queue} The queue
      */
     this.dequeue = function () {
-        items.shift()
-    }
+        items.shift();
+    };
 
     /**
      * Get stringified queue items
      *
-     * @method
+     * @kind method
      * @returns {string} stringified items
      */
     this.toString = function () {
-        return `dequeue < ${items} < enqueue`
-    }
+        return "dequeue < ".concat(items, " < enqueue");
+    };
 
-    return this
+    return this;
 }
 
 export default Queue
