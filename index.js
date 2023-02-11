@@ -20,7 +20,6 @@ function Queue() {
      */
     this.enqueue = function (item) {
         items.push(item)
-        return this
     }
 
     /**
@@ -31,7 +30,6 @@ function Queue() {
      */
     this.dequeue = function () {
         items.shift()
-        return this
     }
 
     /**

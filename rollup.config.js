@@ -50,9 +50,19 @@ const amdMinConfig = {
     plugins: [terser()]
 }
 
+const exampleConfig = {
+    input: 'example/main.js',
+    output: {
+        file: 'example/bundle.js',
+        format: 'iife'
+    },
+    plugins: [terser()]
+}
+
 export default [
     esConfig,
     amdConfig,
     esMinConfig,
-    amdMinConfig
+    amdMinConfig,
+    exampleConfig
 ];
