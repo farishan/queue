@@ -1,0 +1,29 @@
+{
+  "name": "queue",
+  "version": "0.1.0",
+  "description": "Queue data structure implemented with JavaScript",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/farishan/queue.git"
+  },
+  "keywords": [
+    "queue",
+    "javascript"
+  ],
+  "author": "Faris Han",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/farishan/queue/issues"
+  },
+  "homepage": "https://github.com/farishan/queue#readme",
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.0",
+    "rollup": "^3.15.0"
+  }
+}
